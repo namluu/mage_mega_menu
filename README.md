@@ -12,7 +12,7 @@
 
 ##### Installation and Configuration:
 1. Copy extension to webroot
-2. (Optional) Move files in layout, template, skin to your current theme
+2. Move files in layout, template, skin to your current theme (current extension use theme RWD)
 3. Re-login dashboard 
 4. Configure at System > Configuration > BLUECOM > Mega Menu
 ...The screenshot
