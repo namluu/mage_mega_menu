@@ -1,0 +1,13 @@
+<div class="nav-container" id="mg-nav-container">
+    <ul id="megamenu">
+        <?php if (Mage::getStoreConfig('megamenu/general/show_home_link')) { ?>
+        <li id="menu-home" class="menu">
+            <a class="level0" href="<?php echo $this->getUrl() ?>">
+                <span><?php echo $this->__('Home');?></span>
+            </a>
+        </li>
+        <?php } ?>
+        <?php echo Mage::helper('megamenu')->getMenuContent(); ?>
+        <div class="clearBoth"></div>
+    </ul>
+</div>

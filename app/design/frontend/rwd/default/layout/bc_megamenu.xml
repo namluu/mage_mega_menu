@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout version="0.1.0">
+    <default>
+        <block type="megamenu/toggle"></block>
+    </default>
+</layout>

@@ -1,0 +1,396 @@
+#mg-nav-container {
+    border-bottom: 0px !important;
+    min-height: 36px;
+}
+a:hover {
+    text-decoration: none;
+}
+#megamenu {
+    position: relative;
+    font-size: 14px;
+    padding: 0 0 3px 0;
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    background: url('../images/bg-nav.gif') repeat-x;
+    background-position: 0 1px;
+    float: left;
+    list-style-type: none;
+}
+#megamenu li.menu {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    float: left;
+}
+#megamenu li.menu a.level0 {
+    background: transparent;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 8px 8px 3px 8px;
+    border: 1px solid transparent;
+    height: 36px;
+}
+#megamenu > li.menu > a.level0:hover, #megamenu > li.menu > a.level0:active, #megamenu > li.menu:hover > a.level0 {
+    background: #fff;
+    border: 1px solid #000;
+    border-bottom-color: #fff;
+    cursor: pointer;
+}
+#megamenu > li#menu-home > a.level0:hover, #megamenu > li#menu-home > a.level0:active, #megamenu > li#menu-home:hover > a.level0 {
+    border-bottom-color: #000;
+}
+#megamenu > li.menu:first-child:hover > a.level0 {
+    border-left-color: #ccc;
+}
+.mg-mega-menu-popup {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 3px 0 0 14px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #c9c7c8;
+    border-top: none;
+    z-index: 10000;
+    min-height: 219px;
+}
+#megamenu > li.menu:hover > .mg-mega-menu-popup{
+    display: block;
+}
+.mg-mega-menu-popup .column{
+    border: none;
+    padding-top: 9px;
+    margin-right: 31px;
+    float: left;
+    width: auto;
+}
+a.level0.act span{
+    background: #fdec3f;
+}
+/*IE7 fix*/
+*:first-child+html #megamenu {
+    z-index: 998;
+}
+div.menu {
+    float: left;
+    padding: 0px ;
+    margin: 0px;
+    height: 36px;
+}
+div.menu a:link, div.menu a:visited {
+    display: block;
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    float: left;
+    padding: 10px 8px 3px 8px;
+    border: 1px solid transparent;
+    height: 35px;
+}
+div.menu a span:hover {
+    cursor: pointer;
+}
+div.mg-mega-menu-popup {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    text-align: left;
+    padding: 0px 0px 10px 0px;
+    border-top: 0;
+    width: 100%;
+}
+div.menu a, div.mg-mega-menu-popup a {
+    text-decoration: none;
+    display:block;
+    cursor: pointer;
+    height: 0;
+    height: auto;
+    line-height:13px;
+}
+div.level1 {
+    margin-bottom: 5px;
+}
+div.level2 {
+    margin-bottom: 5px;
+}
+div.block2 {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+a.level1:link, a.level1:visited {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+a.level2:link, a.level2:visited {
+    border-radius: 2px;
+}
+/* Clearfix */
+div.block2:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+html[xmlns] div.block2 {
+    display: block;
+}
+* html div.block2 {
+    height: 1%;
+}
+div.block1{
+    float: left;
+}
+
+div.block2 p {
+    margin-bottom: 3px;
+    line-height: 120%;
+    color: #000;
+    font-size: 11px;
+}
+div.block2 {
+    float: right;
+    top:0;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+div.block2 p a {
+    display: inline;
+}
+div.block2 a img {
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+div.block2 a:hover img {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+div.block2 .brand a:hover img {
+    -webkit-transition: all 0;
+    -moz-transition: all 0;
+    -ms-transition: all 0;
+    transition: all 0;
+}
+
+div.block2 .menu-content{padding: 5px 8px 0px 12px;}
+div.block2 ul{  padding: 0px 0px 0px 15px;}
+div.mg-mega-menu-popup hr {
+    margin: 0px 0px 10px 0px;
+}
+/******************************************* COLUMN WIDTH ***************************** */
+div.column {
+    padding: 0px 1%;
+    border: none;
+    padding-top: 9px;
+    margin-right: 31px;
+    float: left;
+    width: auto;
+}
+/*end COLUMN WIDTH  */
+.sub-cats-container .itemMenu.level2 {
+    width: 144px;
+    float: left;
+    margin: 0;
+}
+.sub-cats-container .itemMenu.not-first{
+    margin-left: 31px;
+}
+.sub-cats-container a.itemSubMenuName.level2 {
+    clear: both;
+    line-height: 25px;
+    color: #000;
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: normal;
+    display: block;
+}
+.megamenu a:hover{
+    text-decoration: none;
+}
+.sub-cats-container a.itemSubMenuName:hover span {
+    border-bottom: 1px solid #000;
+    color: #000;
+    padding-bottom: 0px;
+}
+div.itemSubMenu {
+    margin-left: 0px;
+}
+.clearBoth {
+    clear:both;
+    height: 0;
+    overflow: hidden;
+}
+div.level1 {
+    margin-bottom: 0px;
+}
+
+/*FONTS*/
+div.menu {
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+    line-height: 0;
+}
+a.level1:link, a.level1:visited {
+    text-transform: none;
+    font-weight: normal;
+}
+a.level2:link, a.level2:visited {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+}
+a.level2:hover, a.level2.act, a.level2.act {
+    color: #3399cc;
+}
+.block2 table.brand {
+    float: left;
+}
+.block2 .single_menu_product {
+    float: left;
+    position: relative;
+    max-width: 150px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+/*MOBILE MENU STYLES*/
+#menu-button, .parentMenu {
+    display: inline-block;
+}
+html[xmlns] #menu-button, html[xmlns] .parentMenu {
+    display: block;
+}
+* html #menu-button, * html .parentMenu {
+    height: 1%;
+}
+.view_all_mn {
+    clear: both;
+    padding: 11px 14px 0 0;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+.view_all_mn a {
+    float: none;
+    height: 28px !important;
+    text-transform: uppercase;
+    line-height: 12px;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+.view_all_mn a span{
+    float: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+.view_all_mn a:hover span.go-all, .view_all_mn a:active span.go-all{
+    border-bottom: 1px solid #000;
+    color: #000;
+    padding-bottom: 0px;
+}
+.thumb-image-menu{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.sub-section {
+    border: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 31px;
+    float: left;
+    width: auto;
+}
+.sub-cats-container {
+    margin-top: 4px;
+    padding-top: 1px;
+    border-top: 1px solid #b1aeae;
+}
+.sub-cats-mn {
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+img.mega-nav-item-image {
+    width: 250px;
+    height: auto;
+}
+@media only screen and (max-width: 770px) {
+    #mg-nav-container{
+        min-height: auto;
+    }
+    #megamenu {
+         height: auto;
+         margin: 0;
+         background: none;
+         float: none;
+    }
+    #megamenu li.menu{
+        float: none;
+    }
+    #megamenu li.parent > a.level0:after {
+        content: '';
+        display: block;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #cccccc;
+        border-right: none;
+        margin-top: -15px;
+    }
+    #megamenu li.parent > a.level0 > span {
+        padding-left: 10px;
+    }
+    #megamenu li.menu a.level0{
+        border-bottom: 1px solid #cccccc;
+    }
+    #megamenu li.menu:last-child a.level0 {
+        border-bottom: 0;
+    }
+    a.level0.act span {
+        background: none;
+    }
+    #megamenu .menu-active > ul.level0{
+        display: block;
+    }
+    #megamenu > li.menu > a.level0:hover, #megamenu > li.menu > a.level0:active, #megamenu > li.menu:hover > a.level0{
+        background: none;
+        border: 0px;
+    }
+    .mg-mega-menu-popup{
+        position: inherit;
+    }
+    .thumb-image-menu{
+        display: none;
+    }
+    .view_all_mn {
+        position: inherit;
+    }
+}
+
